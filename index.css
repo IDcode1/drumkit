@@ -1,0 +1,89 @@
+body {
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+.main{
+    margin: 30px auto 0;
+    text-align: center;
+}
+.drum-wrapper {
+    position: relative;
+    width: 700px;
+    margin: -100px auto 0;
+}
+.drum-kit {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.crash-cymbal {
+    position: absolute;
+    top: 135px;
+    left: 105px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out 0.05s;
+}
+.hihat-top-cymbal {
+    position: absolute;
+    top: 196px;
+    right: 100px;
+    transform: scale(1.35);
+    z-index: 0;
+    transition: all ease-in-out 0.05s;
+}
+.key {
+    display: inline-block;
+    transition: all ease-in-out 0.05s;
+    position: absolute;
+    background: #eaeaea;
+    font-size: 1.5em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #4056e4;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+.playing {
+    transform: scale(1.1);
+}
+.key.crash {
+    top: 100px;
+    left: 75px;
+}
+.key.ride {
+    left: 200px;
+    top: 100px;
+}
+.key.tom-mid {
+    left: 230px;
+    top: 250px;
+}
+.key.tom-high {
+    right: 265px;
+    top: 260px;
+}
+.key.hihat-open {
+    right: 195px;
+    top: 170px;
+}
+.key.hihat-close {
+    right: 100px;
+    top: 170px;
+}
+.key.snare {
+    right: 170px;
+    top: 315px;
+}
+.key.floor-tom {
+    top: 350px;
+    left: 145px;
+}
+.key.kick {
+    top: 370px;
+    right: 330px;
+}
